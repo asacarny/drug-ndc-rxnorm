@@ -152,7 +152,7 @@ product_detail <-
   bind_rows() |>
   rename(rxcui_product=rxcui_target)
 
-# dose forms to flag as IV drugs - we'll remove these products
+# dose forms to flag as IV drugs - we'll set equiv to NA for them
 dose_forms_iv_list <- c(
   "Cartridge",
   "Injectable Solution",
